@@ -634,8 +634,7 @@ class BlumTod:
     
     {hijau}By : {putih} TEGUHGANK && HARYONO }THANKS TO TEAM : {hijau} HARYONO
     
-    {hijau}Message : {putih}Dont forget to 'git pull' maybe I update the bot !
-        """
+    {hijau}Message : {putih}Dont forget to 'git pull' maybe I update the bot ! """
         arg = argparse.ArgumentParser()
         arg.add_argument(
             "--marinkitagawa", action="store_true", help="no clear the terminal !"

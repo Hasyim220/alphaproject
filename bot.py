@@ -360,10 +360,10 @@ class BlumTod:
 
     def main(self):
         banner = f"""
-{magenta}┏┓  ┏┓    •      {putih}BlumTod Auto Claim for {hijau}blum
-{magenta}┗┓  ┃┃┏┓┏┓┓┏┓┏╋  {hijau}Author : {putih}TEGUH&HARYONO
-         ┗┛  ┣┛┛ ┗┛┃┗ ┗┗  {putih}Github : {hijau}Pelingacik
-{magenta}           ┛      {hijau}Note : {putih}WAJIBNGONTOLINTEGUH
+{magenta}┏┓  ┏┓    •       {merah}BlumTod Auto Claim for {hijau}blum
+{magenta}┗┓  ┃┃┏┓┏┓┓┏┓┏╋ {putih}Author    : {putih}TEGUH&HARYONO
+{magenta}┗┛  ┣┛┛ ┗┛┃┗ ┗┗ {merah}GITHUB BY : {hijau}Pelingacik
+{magenta}           ┛      {putih}Note      : {putih}WAJIBNGONTOLINTEGUH
         """
         arg = argparse.ArgumentParser()
         arg.add_argument(

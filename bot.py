@@ -93,7 +93,7 @@ class BlumTod:
                         self.log(f"{hijau}success complete task id {task_id} !")
                         continue
 
-                self.log(f"{kuning}already complete task id {task_id} !")
+                self.log(f"{hijau}already complete task id {task_id} !")
 
     def set_proxy(self, proxy=None):
         self.ses = requests.Session()
@@ -184,7 +184,7 @@ class BlumTod:
         headers["Authorization"] = f"Bearer {access_token}"
         res = self.http(url, headers)
         if res.status_code == 404:
-            self.log(f"{kuning}already check in today !")
+            self.log(f"{hijau}already check in today !")
             return
         res = self.http(url, headers, "")
         if "ok" in res.text.lower():
@@ -362,9 +362,9 @@ class BlumTod:
         banner = f"""
  {merah}_   _    _    ______   _____  _   _  ___  
 {merah}| | | |  / \  |  _ \ \ / / _ \| \ | |/ _ \ {merah}BlumTod Auto Claim for {hijau}blum
-{merah}| |_| | / _ \ | |_) \ V / | | |  \| | | | |{putih}Author    : {putih}TEGUH&HARYONO
-{putih}|  _  |/ ___ \|  _ < | || |_| | |\  | |_| |{merah}GITHUB BY : {hijau}Pelingacik
-{putih}|_| |_/_/   \_\_| \_\|_| \___/|_| \_|\___/ {putih}Note      : {putih}WAJIBNGONTOLINTEGUH
+{merah}| |_| | / _ \ | |_) \ V / | | |  \| | | | |{putih}Author    : {putih}HARYONO
+{putih}|  _  |/ ___ \|  _ < | || |_| | |\  | |_| |{merah}TELEGRAM BY : {hijau}@Songonku01
+{putih}|_| |_/_/   \_\_| \_\|_| \___/|_| \_|\___/ {putih}Note      : {putih}Salam Olahraga
         """
         arg = argparse.ArgumentParser()
         arg.add_argument(
